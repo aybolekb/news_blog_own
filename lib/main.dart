@@ -18,7 +18,7 @@ void main() async {
       assetLoader: const CodegenLoader(),
       supportedLocales: const [Locale('en'), Locale('ru'), Locale('tk')],
       path: 'assets/translations',
-      fallbackLocale: const Locale('ru'),
+      fallbackLocale: const Locale('tk'),
       child: const MyApp()));
 }
 

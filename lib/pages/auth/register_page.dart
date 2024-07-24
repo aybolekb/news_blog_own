@@ -64,7 +64,7 @@ class ReegisterPage extends StatelessWidget {
                                 children: [
                                   const CircleAvatar(
                                     radius: 12,
-                                    backgroundImage: AssetImage(Images.tmFlag),
+                                    backgroundImage: AssetImage(tmFlag),
                                   ),
                                   const Gap(4),
                                   Text(
@@ -111,7 +111,8 @@ class ReegisterPage extends StatelessWidget {
                               style: theme.textTheme.titleLarge
                                   ?.copyWith(color: appColor.primaryColor),
                               inputFormatters: [PhoneNumberFormatter()],
-                              decoration: const InputDecoration(),
+                              decoration: const InputDecoration(
+                                  border: InputBorder.none),
                               onChanged: (value) {
                                 authBlocProvider
                                     .add(PhoneTextOnChangedEvent(phone: value));

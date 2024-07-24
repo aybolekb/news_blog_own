@@ -41,7 +41,7 @@ class MainNavigation extends StatelessWidget {
                         style: theme.textTheme.titleLarge?.copyWith(
                             color: selectedIndex == 0
                                 ? appColor.primaryColor
-                                : AppTheme.unselectedColor),
+                                : AppTheme.greyColor),
                       ),
                       label: 'Hyzmatlar'),
                   const BottomNavigationBarItem(

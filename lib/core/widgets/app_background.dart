@@ -3,6 +3,7 @@ import 'package:news_blog_own/config/theme/theme.dart';
 
 class AppBackground extends StatelessWidget {
   final Widget child;
+
   const AppBackground({super.key, required this.child});
 
   @override

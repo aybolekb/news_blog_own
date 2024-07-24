@@ -114,7 +114,7 @@ class DarkColor extends AppColor {
 }
 
 class AppTheme {
-  static Color unselectedColor = const Color(0xff757988);
+  static Color greyColor = const Color(0xff757988);
   static ThemeData lightTheme() {
     final appColor = LightColor();
     return ThemeData(
@@ -172,13 +172,11 @@ class AppTheme {
             showUnselectedLabels: true,
             backgroundColor: appColor.secondaryColor,
             selectedItemColor: appColor.primaryColor,
-            unselectedItemColor: unselectedColor),
+            unselectedItemColor: greyColor),
         inputDecorationTheme: InputDecorationTheme(
-            border: InputBorder.none,
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
             hintStyle: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: appColor.textColor)),
+                fontSize: 16, fontWeight: FontWeight.w500, color: greyColor)),
         checkboxTheme: CheckboxThemeData(
             side: BorderSide(color: appColor.passiveTextColor),
             shape: RoundedRectangleBorder(
@@ -207,7 +205,7 @@ class AppTheme {
             showSelectedLabels: true,
             showUnselectedLabels: true,
             selectedItemColor: appColor.primaryColor,
-            unselectedItemColor: unselectedColor),
+            unselectedItemColor: greyColor),
         textTheme: TextTheme(
           titleLarge: TextStyle(
               fontSize: 22,
@@ -247,11 +245,9 @@ class AppTheme {
               color: appColor.textColor),
         ),
         inputDecorationTheme: InputDecorationTheme(
-            border: InputBorder.none,
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
             hintStyle: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: appColor.textColor)),
+                fontSize: 16, fontWeight: FontWeight.w500, color: greyColor)),
         checkboxTheme: CheckboxThemeData(
             side: BorderSide(color: appColor.passiveTextColor),
             shape: RoundedRectangleBorder(

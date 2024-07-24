@@ -34,7 +34,11 @@ class SearchBarWidget extends StatelessWidget {
           Expanded(
               child: TextField(
             enabled: isEnable,
-            decoration: const InputDecoration(hintText: 'Gözleg'),
+            decoration: InputDecoration(
+                hintText: 'Gözleg',
+                border: InputBorder.none,
+                hintStyle: theme.inputDecorationTheme.hintStyle
+                    ?.copyWith(color: appColor.textColor)),
           ))
         ],
       ),
